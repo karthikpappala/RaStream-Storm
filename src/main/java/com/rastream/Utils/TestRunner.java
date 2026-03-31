@@ -22,7 +22,13 @@ public class TestRunner {
         testPhase3();
         System.out.println("----------------------------");
         testPhase4();
+        
+         System.out.println("----------------------------");
+        System.out.println("Phase 5: run TopologyRunner separately");
+        System.out.println("Command: mvn exec:java " +
+                "-Dexec.mainClass=\"com.rastream.topology.TopologyRunner\"");
     }
+    
     public static void testPhase2() {
 
         System.out.println("=== Testing Phase 2: Subgraph Partitioning ===");
